@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion {
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 50%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            position: relative;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ddd;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            float: right;
+            margin-left: 20px;
+        }
+        .cotton{
+            float: calc(100% - 50%);
+        }
+    </style>
+</head>
+<body>
+    <iframe height="250vh" width="100%" src="header.html" name="header"></iframe>
+    <table class="table2">
+        <tr>
+           <td align="center"><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/sardar%20agro.html"><u>Home</u></a></td>
+           
+
+           <td align="center"> <a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/product.html"><u>products</u></a></td>
+           
+           <td align="center" ><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/companies.html"><u>collabrating companies</u></a></td>
+           <td align="right"><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/register.html"><u>registor as a farmar</u></a></td>
+        </tr>
+   </table>
+   <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\cotton head.png">
+<p class="elementor-icon-box-description">
+    Majorsol cotton supplies needed phosphorus and potash in balanced proportion along with secondary & micronutrients. Enhances quality of lint and increases oil percentage in seed. Its application increases disease and pest resistance. </p>
+    <h2>Nitrogen <span style="color: #97c93c;">Deficiency</span></h2>
+    
+    <button class="accordion" onclick="toggleAccordion('topic1')">Symptoms</button>
+    <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\nitrogeneaffect.jpg" alt="Image 1">
+    <div class="panel" id="topic1Panel">
+        <p>Yellowing of older leaves.</p>
+    </div>
+    <button class="accordion" onclick="toggleAccordion('topic2')">Affect</button>
+    <div class="panel" id="topic2Panel">
+        <p>Stunted growth with few vegetative fruiting branches.</p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('topic3')">Solution</button>
+    <div class="panel" id="topic3Panel">
+        <p><b>Product</b><br>
+            Macrofert 20:20:20 5gm/lit<br>
+            
+            <b>Soil/Drip</b><br>
+            Plantex 20:20:20 5kg/acre
+            <br>
+            <b>Benefit</b><br>
+            Helps in vegetative growth, formation of amino acids.</p>
+    </div>
+    <h2>Magnesium <span style="color: #97c93c;">Deficiency</span></h2>
+    <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\magnesium-2.jpg" alt="Image 2">
+    <button class="accordion" onclick="toggleAccordion('topic4')">Symptoms</button>
+    <div class="panel" id="topic4Panel">
+        <p>Purple-red leaves with green veins,and affected leaves may age prematurely.</p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('topic5')">Affect</button>
+    <div class="panel" id="topic5Panel">
+        <p>Leaf cupping and interveinal chlorosis veins remain green,starts in young leaves.</p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('topic6')">Solution</button>
+    <div class="panel" id="topic6Panel">
+        <p><b>Product</b><br>
+            Magmix 4-5gm/lit, zinc mag 3-5ml/lit, Fertisol 3-5gm/lit<br>
+            
+            <b>Soil/Drip</b><br>
+            Ferromag 5kg/acre
+            <br>
+            <b>Benefit</b><br>
+            Helps in photosynthesis,starch translocation</p>
+    </div>
+    <h2>Sulphur <span style="color: #97c93c;">Deficiency</span></h2>
+    <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\sulphur-2.jpg" alt="Image 2">
+    <button class="accordion" onclick="toggleAccordion('topic7')">Symptoms</button>
+    <div class="panel" id="topic7Panel">
+        <p>Pale green to yellow colour of young leaves.</p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('topic8')">Affect</button>
+    <div class="panel" id="topic8Panel">
+        <p>The plants are small and spindly with short,slender stalks </p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('topic9')">Solution</button>
+    <div class="panel" id="topic9Panel">
+        <p><b>Product</b><br>
+            Primasulf 3-4ml/lit, fertisol 5gm/lit<br>
+            
+            <b>Soil/Drip</b><br>
+            —
+            <br>
+            <b>Benefit</b><br>
+            Improves special character in crop</p>
+    </div>
+
+
+
+    <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\grountnut head.png">
+    <p class="elementor-icon-box-description">
+        Majorsol groundnut is used to improve kernel setting & better size of groundnut seed. It increase oil content of groundnut thereby helps to get quality production. It helps to increases disease resistance power in groundnut crop. Its balance nutrition formula gives healthy growth.</p>
+        <h2>Nitrogen <span style="color: #97c93c;">Deficiency</span></h2>
+        
+        <button class="accordion" onclick="toggleAccordion('topic10')">Symptoms</button>
+        <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\nitro-4.jpg" alt="Image 1">
+        <div class="panel" id="topic10Panel">
+            <p>Plants are stunted and older leaves turn into light yellow colour.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic11')">Affect</button>
+        <div class="panel" id="topic11Panel">
+            <p>Stunted growth.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic12')">Solution</button>
+        <div class="panel" id="topic12Panel">
+            <p><b>Product</b><br>
+                Macrofert 20:20:20 5gm/lit<br>
+                
+                <b>Soil/Drip</b><br>
+                Plantex 20:20:20 5kg/acre
+                <br>
+                <b>Benefit</b><br>
+                Helps in vegetative growth, formation of amino acids.</p>
+        </div>
+        <h2>Magnesium <span style="color: #97c93c;">Deficiency</span></h2>
+        <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\Magnesium-1-1-1.jpg" alt="Image 2">
+        <button class="accordion" onclick="toggleAccordion('topic13')">Symptoms</button>
+        <div class="panel" id="topic13Panel">
+            <p>The predominate symptom is darkening of veins.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic14')">Affect</button>
+        <div class="panel" id="topic14Panel">
+            <p>Growth ceases.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic15')">Solution</button>
+        <div class="panel" id="topic15Panel">
+            <p><b>Product</b><br>
+                Magmix 4-5gm/lit, zinc mag 3-5ml/lit, Fertisol 3-5gm/lit<br>
+                
+                <b>Soil/Drip</b><br>
+                Ferromag 5kg/acre
+                <br>
+                <b>Benefit</b><br>
+                Helps in photosynthesis,starch translocation</p>
+        </div>
+        <h2>Sulphur <span style="color: #97c93c;">Deficiency</span></h2>
+        <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\sul-2.jpg" alt="Image 2">
+        <button class="accordion" onclick="toggleAccordion('topic16')">Symptoms</button>
+        <div class="panel" id="topic16Panel">
+            <p>Younger leaves turn into yellow colour. oil formation will not be there.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic17')">Affect</button>
+        <div class="panel" id="topic17Panel">
+            <p>Papery leaves under severe deficiency. </p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic18')">Solution</button>
+        <div class="panel" id="topic18Panel">
+            <p><b>Product</b><br>
+                Primasulf 3-4ml/lit, fertisol 5gm/li<br>
+                
+                <b>Soil/Drip</b><br>
+                —
+                <br>
+                <b>Benefit</b><br>
+                Improves special character in crop</p>
+        </div>
+
+
+
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\wheat.png">
+    <p class="elementor-icon-box-description">
+        Rich source of Manganese with Phosphorus and Potash. Improves number of tillers and helps in grain formation to ultimately Increase yield & quality of wheat.</p>
+        <h2>Nitrogen <span style="color: #97c93c;">Deficiency</span></h2>
+        
+        <button class="accordion" onclick="toggleAccordion('topic19')">Symptoms</button>
+        <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\w1.jpg" alt="Image 1">
+        <div class="panel" id="topic19Panel">
+            <p>Older leaves dying prematurely when storage is severe.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic20')">Affect</button>
+        <div class="panel" id="topic20Panel">
+            <p>Effects on older and younger leaves.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic21')">Solution</button>
+        <div class="panel" id="topic21Panel">
+            <p><b>Product</b><br>
+                Macrofert 20:20:20 5gm/lit<br>
+                
+                <b>Soil/Drip</b><br>
+                Plantex 20:20:20 5kg/acre
+                <br>
+                <b>Benefit</b><br>
+                Helps in vegetative growth, formation of amino acids.</p>
+        </div>
+        <h2>Phosphorous <span style="color: #97c93c;">Deficiency</span></h2>
+        <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\w2.jpg" alt="Image 2">
+        <button class="accordion" onclick="toggleAccordion('topic22')">Symptoms</button>
+        <div class="panel" id="topic22Panel">
+            <p>Purple and yellowing of leaf tips and delayed heading.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic23')">Affect</button>
+        <div class="panel" id="topic23Panel">
+            <p>Plants are stunted.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic24')">Solution</button>
+        <div class="panel" id="topic24Panel">
+            <p><b>Product</b><br>
+                Fertimax 12:61:00 5gm/lit, Fertimax 00:52:34( 5-10gm/lit)<br>
+                
+                <b>Soil/Drip</b><br>
+                Plantex 12:61:00 5kg/acre
+                <br>
+                <b>Benefit</b><br>
+                Root development, winter hardness</p>
+        </div>
+        <h2>Potassium <span style="color: #97c93c;">Deficiency</span></h2>
+        <img class="image" src="C:\Users\Admin\OneDrive - Adani University\web\project\images\w3.jpg" alt="Image 2">
+        <button class="accordion" onclick="toggleAccordion('topic25')">Symptoms</button>
+        <div class="panel" id="topic25Panel">
+            <p>Leaves chlorotic at the tip and progressing to the base, scorched appearance, stems weak.</p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic26')">Affect</button>
+        <div class="panel" id="topic26Panel">
+            <p>Pale green plants with a limp or wilted appearance. </p>
+        </div>
+    
+        <button class="accordion" onclick="toggleAccordion('topic27')">Solution</button>
+        <div class="panel" id="topic27Panel">
+            <p><b>Product</b><br>
+                Fertimax 00:00:50 5gm/lit, Fertimax13:00:45( 5-10gm/lit), Fertisol 3-5gm/lit<br>
+                
+                <b>Soil/Drip</b><br>
+                —
+                <br>
+                <b>Benefit</b><br>
+                Resistance to pests and diseases, opening and closing of stomata</p>
+        </div>
+
+        
+
+
+    <script>
+        function toggleAccordion(topicId) {
+            var panel = document.getElementById(topicId + "Panel");
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    </script>
+    <p>For more information please visit us at our store.</p>
+    
+    
+    <table class="table3">
+        <tr>
+         <td><u>About Us:</u></td>
+        </tr>
+        <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>email address:</td>
+         <td>contact details:</td>
+         <td>visit us at:</td>
+        </tr>
+        
+        <tr>
+         <td><a href="mailto:sardaragro@gmail.com">sardaragro@gmail.com</a></td>
+         <td rowspan="2">Mr. Mukesh Vadodariya:<a href="tel:+919712587922">+91 9712587922</a></td>
+         <td>SARDAR AGRO CENTER,</td>
+        </tr>
+        <tr>
+         <td></td>
+          <td>A-4,Shyam Shopping Center,</td>
+        </tr>
+        <tr>
+         <td></td>
+         <td rowspan="4">Mr. Chirag Vadodariya:<a href="tel:+919979905099">+91 9979905099</a></td>
+         <td>opp.subhash park</td>
+        </tr>
+        <tr>
+         <td></td>
+         <td>Ranjit Sagar Road,</td>
+        </tr>
+        <tr>
+         <td></td>
+         <td>Jamnagar,Gujarat,361005</td>
+        </tr>
+        <tr>
+         <td></td>
+         <td><a href="https://maps.app.goo.gl/YkCEESwXp372Ecj16">Location</a></td>
+        </tr>
+     </table>
+</body>
+</html>

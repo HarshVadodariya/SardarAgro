@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>companies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .image-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin: 10px;
+    display: block;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+    ]
+
+    <iframe height="250vh" width="100%" src="header.html" name="header"></iframe>
+    <table class="table2">
+        <tr>
+           <td align="center"><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/sardar%20agro.html"><u>Home</u></a></td>
+           
+
+           <td align="center"> <a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/product.html"><u>products</u></a></td>
+           
+           <td align="center" ><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/companies.html"><u>collabrating companies</u></a></td>
+           <td align="right"><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/register.html"><u>registor as a farmar</u></a></td>
+        </tr>
+   </table>
+   <p>
+    "At <b>Sardar Agro Center</b>, we take pride in offering the best products from top-notch companies to all farmers. We understand the importance of quality and reliability when it comes to agricultural supplies, which is why we have carefully curated our selection to include only the finest products. Whether it's seeds, fertilizers, pesticides, or equipment, we aim to provide farmers with the tools they need to succeed. Our commitment to excellence means that farmers can trust us to deliver the best solutions for their agricultural needs, helping them achieve optimal results in their fields."
+   </p>
+   <p>Here are the list of companies with their official website </p>
+   <div class="image-links">
+    <a href="https://www.upl-ltd.com/" target="_blank">
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\upl.png" alt="Image 1">
+    </a>
+    <a href="https://meghmani.com/" target="_blank">
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\meghmani.jpg" alt="Image 2">
+    </a>
+    <a href="https://www.coromandel.biz/" target="_blank">
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\coromandel.png" alt="Image 3">
+    </a>
+   </div><br>
+   <div class="image-links">
+    <a href="https://www.godrejagrovet.com/" target="_blank">
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\godrej.png" alt="Image 4">
+    </a>
+    <a href="https://www.icl-group.com/" target="_blank">
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\ICL.jpeg" alt="Image 5">
+    </a>
+    <a href="https://www.swal.in/" target="_blank">
+        <img src="C:\Users\Admin\OneDrive - Adani University\web\project\images\swal_logo.png" alt="Image 6">
+    </a>
+</div>
+<script>
+    const imageLinks = document.querySelectorAll('.image-links a');
+
+imageLinks.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        link.querySelector('img').style.transform = 'scale(1.1)';
+    });
+
+    link.addEventListener('mouseout', () => {
+        link.querySelector('img').style.transform = 'scale(1)';
+    });
+});
+</script>
+<table class="table3">
+    <tr>
+     <td><u>About Us:</u></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>email address:</td>
+     <td>contact details:</td>
+     <td>visit us at:</td>
+    </tr>
+    
+    <tr>
+     <td><a href="mailto:sardaragro@gmail.com">sardaragro@gmail.com</a></td>
+     <td rowspan="2">Mr. Mukesh Vadodariya:<a href="tel:+919712587922">+91 9712587922</a></td>
+     <td>SARDAR AGRO CENTER,</td>
+    </tr>
+    <tr>
+     <td></td>
+      <td>A-4,Shyam Shopping Center,</td>
+    </tr>
+    <tr>
+     <td></td>
+     <td rowspan="4">Mr. Chirag Vadodariya:<a href="tel:+919979905099">+91 9979905099</a></td>
+     <td>opp.subhash park</td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Ranjit Sagar Road,</td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Jamnagar,Gujarat,361005</td>
+    </tr>
+    <tr>
+     <td></td>
+     <td><a href="https://maps.app.goo.gl/YkCEESwXp372Ecj16">Location</a></td>
+    </tr>
+ </table>
+</body>
+</html>

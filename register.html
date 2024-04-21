@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+small {
+  color: #777;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+#successMessage {
+  text-align: center;
+  color: #4CAF50;
+}
+    </style>
+</head>
+<body>
+    <iframe height="250vh" width="100%" src="header.html" name="header"></iframe>
+    <table class="table2">
+        <tr>
+           <td align="center"><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/sardar%20agro.html"><u>Home</u></a></td>
+           
+
+           <td align="center"> <a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/product.html"><u>products</u></a></td>
+           
+           <td align="center" ><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/companies.html"><u>collabrating companies</u></a></td>
+           <td align="right"><a href="file:///C:/Users/Admin/OneDrive%20-%20Adani%20University/web/project/pages/register.html"><u>registor as a farmar</u></a></td>
+        </tr>
+   </table>
+    <div class="container">
+        <h1>Farmer Registration Form</h1>
+        <form id="farmerForm" onsubmit="submitForm(event)">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+          <small>Format: 10 digits only</small>
+    
+          <label for="farmType">Farm Type:</label>
+          <select id="farmType" name="farmType" required>
+            <option value="">Select Farm Type</option>
+            <option value="Crop">Crop Farming</option>
+            <option value="Livestock">Livestock Farming</option>
+            <option value="Mixed">Mixed Farming</option>
+            <option value="Other">Other</option>
+          </select>
+    
+          <button type="submit">Register</button>
+        </form>
+        <p id="successMessage" class="hidden">Registration successful!</p>
+      </div>
+    <script>
+        function submitForm(event) {
+  event.preventDefault();
+
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const farmType = document.getElementById('farmType').value;
+
+  // Display success message
+  const successMessage = document.getElementById('successMessage');
+  successMessage.classList.remove('hidden');
+
+  // You can send this data to a server using AJAX, or display it on the page
+  console.log('Name:', name);
+  console.log('Email:', email);
+  console.log('Phone:', phone);
+  console.log('Farm Type:', farmType);
+
+  // Optional: Clear form fields after submission
+  document.getElementById('farmerForm').reset();
+}
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><source src="https://ariesagro.com/" type="agro website"></p>
+
+</body>
+</html>
